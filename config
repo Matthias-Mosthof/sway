@@ -41,6 +41,8 @@ default_border pixel 2
 # Set the Wallpaper:
 output * bg $HOME/.config/sway/wallpaper.jpg fill
 
+# capture the specified screen area to clipboard    
+bindsym Print exec grim -g "$(slurp)" - | wl-copy    
 
 #====================================#
 # Activate the panel                 #
