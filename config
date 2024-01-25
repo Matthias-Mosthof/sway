@@ -44,6 +44,10 @@ default_border pixel 2
         xkb_variant "coder"
 }
 
+# Set Monitor Order and Position
+output DP-4 pos 0 0 res 1920x1080
+output eDP1 pos 1920 0 res 1600x900
+
 # Set the Wallpaper:
 output * bg $HOME/.config/sway/wallpaper.jpg fill
 
