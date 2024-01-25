@@ -38,6 +38,12 @@ gaps outer 3
 # Configure the default border:
 default_border pixel 2
 
+# Change Keyboard Layout to German
+ input * {
+        xkb_layout "de, de"
+        xkb_variant "coder"
+}
+
 # Set the Wallpaper:
 output * bg $HOME/.config/sway/wallpaper.jpg fill
 
