@@ -160,15 +160,15 @@ bindsym $mod+r mode "resize"
 # Keyboard Shortcuts (Workspaces) #
 #=================================#
 # Switch to workspace
-set $ws1 "1 - Communication"
-set $ws2 "2 - Browsing"
-set $ws3 "3 - System Administration"
-set $ws4 "4 - Learn Linux TV"
-set $ws5 "5 - Media"
-set $ws6 "6 - Writing"
-set $ws7 "7 - Homelab"
-set $ws8 "8 - Home Assistant"
-set $ws9 "9 - Unwind"
+set $ws1 "1 - Browsing"
+set $ws2 "2 - Coding"
+set $ws3 "3 - Teams"
+set $ws4 "4 - Media"
+set $ws5 "5 - Undefined"
+set $ws6 "6 - Undefined2"
+set $ws7 "7 - Undefined3"
+set $ws8 "8 - Undefined4"
+set $ws9 "9 - Undefined5"
 
 # Move between workspaces
 bindsym $mod+1 workspace $ws1
