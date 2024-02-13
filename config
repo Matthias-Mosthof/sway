@@ -18,7 +18,7 @@
 #========================#
 # Declare Colors:
 set $background #E6332b2b
-set $color_urgent #fb4934
+set $color_urgent #e1ffc4
 set $text_color #ffffff
 set $title_bg_unfocused #666666
 set $title_outline_active #00fff7
@@ -32,6 +32,7 @@ client.unfocused        $title_outline_unfocused $title_bg_unfocused $text_color
 client.urgent           $color_urgent            $color_urgent       $color_urgent $color_urgent         $color_urgent
 
 exec pulseaudio --daemonize
+
 
 # Add gaps in between all application windows:
 gaps inner 8
@@ -192,7 +193,9 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 
-
+# Move Workspace to other Screen
+bindsym $mod+Control+Shift+Right move workspace to output right
+bindsym $mod+Control+Shift+Left move workspace to output left
 #=============================#
 # Keyboard Shortcuts (Layout) #
 #=============================#
