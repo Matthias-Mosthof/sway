@@ -31,9 +31,6 @@ client.focused_inactive $title_outline_unfocused $background         $text_color
 client.unfocused        $title_outline_unfocused $title_bg_unfocused $text_color   $title_outline_active
 client.urgent           $color_urgent            $color_urgent       $color_urgent $color_urgent         $color_urgent
 
-exec pulseaudio --daemonize
-
-
 # Add gaps in between all application windows:
 gaps inner 8
 gaps outer 3
@@ -41,6 +38,15 @@ gaps outer 3
 # Configure the default border:
 default_border pixel 3
 
+# Start Services to make Screensharing work
+exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment WAYLAND_DISPLAY
+
+exec_always /usr/libexec/xdg-desktop-portal -r 
+
+# Start Pipewire
+
+exec $HOME/.config/sway/pipewire-start.sh
 
 # Change Keyboard Layout to German
  input * {
