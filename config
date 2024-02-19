@@ -5,9 +5,7 @@
 #----------------------------------------------------------------------------------#
 # Purpose: This configuration file enables you to tweak keyboard shortcuts, adjust #
 # themes and colors, set the wallpaper, and more.                                  #
-#                                                                                  #
-# License: Creative Commons Attribution 4.0 International                          #
-#                                                                                  #
+                                                                                   #
 # Pro-tip: While using Sway, you can trigger this configuration to be re-read by   #
 # pressing Super + Shift + C.                                                      #
 #==================================================================================#
@@ -41,8 +39,6 @@ default_border pixel 3
 # Start Services to make Screensharing work
 exec systemctl --user import-environment XDG_SESSION_TYPE XDG_CURRENT_DESKTOP
 exec dbus-update-activation-environment WAYLAND_DISPLAY
-
-exec_always /usr/libexec/xdg-desktop-portal -r 
 
 # Start Pipewire
 

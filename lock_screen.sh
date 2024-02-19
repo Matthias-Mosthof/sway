@@ -2,7 +2,6 @@
 
 # Credit to the following for comming up with this:
 # https://code.krister.ee/lock-screen-in-sway/
-# To Do: The fancier screen lock mentioned on that page might be cool to try.
 
 # Times the screen off and puts it to background
 swayidle \
